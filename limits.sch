@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 10
+Sheet 8 10
 Title ""
 Date ""
 Rev ""
@@ -193,17 +193,6 @@ F 3 "~" H 2650 1100 50  0001 C CNN
 	1    2650 1100
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:+5VD #PWR0225
-U 1 1 5DC5D2C0
-P 2650 1000
-F 0 "#PWR0225" H 2650 850 50  0001 C CNN
-F 1 "+5VD" H 2665 1173 50  0000 C CNN
-F 2 "" H 2650 1000 50  0001 C CNN
-F 3 "" H 2650 1000 50  0001 C CNN
-	1    2650 1000
-	1    0    0    -1  
-$EndComp
 Connection ~ 2650 1200
 $Comp
 L Diode:1.5KExxA D61
@@ -271,17 +260,6 @@ F 3 "~" H 2650 2050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 2650 2150
-$Comp
-L power:+5VD #PWR0226
-U 1 1 5DC63A58
-P 2650 1950
-F 0 "#PWR0226" H 2650 1800 50  0001 C CNN
-F 1 "+5VD" H 2665 2123 50  0000 C CNN
-F 2 "" H 2650 1950 50  0001 C CNN
-F 3 "" H 2650 1950 50  0001 C CNN
-	1    2650 1950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Isolator:LTV-827S U8
 U 1 1 5DC6C228
@@ -461,17 +439,6 @@ F 3 "~" H 2550 3400 50  0001 C CNN
 	1    2550 3400
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:+5VD #PWR0233
-U 1 1 5DC6C2C1
-P 2550 3300
-F 0 "#PWR0233" H 2550 3150 50  0001 C CNN
-F 1 "+5VD" H 2565 3473 50  0000 C CNN
-F 2 "" H 2550 3300 50  0001 C CNN
-F 3 "" H 2550 3300 50  0001 C CNN
-	1    2550 3300
-	1    0    0    -1  
-$EndComp
 Connection ~ 2550 3500
 $Comp
 L Diode:1.5KExxA D58
@@ -539,17 +506,6 @@ F 3 "~" H 2550 4350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 2550 4450
-$Comp
-L power:+5VD #PWR0234
-U 1 1 5DC6C302
-P 2550 4250
-F 0 "#PWR0234" H 2550 4100 50  0001 C CNN
-F 1 "+5VD" H 2565 4423 50  0000 C CNN
-F 2 "" H 2550 4250 50  0001 C CNN
-F 3 "" H 2550 4250 50  0001 C CNN
-	1    2550 4250
-	1    0    0    -1  
-$EndComp
 $Comp
 L Isolator:LTV-827S U9
 U 1 1 5DC7B59E
@@ -729,17 +685,6 @@ F 3 "~" H 2600 5800 50  0001 C CNN
 	1    2600 5800
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:+5VD #PWR0241
-U 1 1 5DC7B637
-P 2600 5700
-F 0 "#PWR0241" H 2600 5550 50  0001 C CNN
-F 1 "+5VD" H 2615 5873 50  0000 C CNN
-F 2 "" H 2600 5700 50  0001 C CNN
-F 3 "" H 2600 5700 50  0001 C CNN
-	1    2600 5700
-	1    0    0    -1  
-$EndComp
 Connection ~ 2600 5900
 $Comp
 L Diode:1.5KExxA D60
@@ -807,17 +752,6 @@ F 3 "~" H 2600 6750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 2600 6850
-$Comp
-L power:+5VD #PWR0242
-U 1 1 5DC7B678
-P 2600 6650
-F 0 "#PWR0242" H 2600 6500 50  0001 C CNN
-F 1 "+5VD" H 2615 6823 50  0000 C CNN
-F 2 "" H 2600 6650 50  0001 C CNN
-F 3 "" H 2600 6650 50  0001 C CNN
-	1    2600 6650
-	1    0    0    -1  
-$EndComp
 Text HLabel 3000 1200 2    50   Input ~ 0
 X_MIN
 Wire Wire Line
@@ -1029,15 +963,15 @@ F 3 "~" H 4800 1850 50  0001 C CNN
 	1    4800 1850
 	-1   0    0    1   
 $EndComp
-Text HLabel 5600 1750 1    50   Input ~ 0
+Text HLabel 5300 2250 3    50   Input ~ 0
 SOFT_RESET
 Wire Wire Line
 	5600 1750 5600 2050
-Text HLabel 5300 2250 3    50   Input ~ 0
+Text HLabel 5600 1750 1    50   Input ~ 0
 FEED_HOLD
-Text HLabel 5750 1700 1    50   Input ~ 0
-SAFETY_DOOR
 Text HLabel 6000 1600 1    50   Input ~ 0
+SAFETY_DOOR
+Text HLabel 5750 1700 1    50   Input ~ 0
 CYCLE_START
 Wire Wire Line
 	6000 1600 6000 1850
@@ -1186,6 +1120,72 @@ F 1 "+5VD" H 5065 1723 50  0000 C CNN
 F 2 "" H 5050 1550 50  0001 C CNN
 F 3 "" H 5050 1550 50  0001 C CNN
 	1    5050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0225
+U 1 1 5E4D23AE
+P 2650 1000
+F 0 "#PWR0225" H 2650 850 50  0001 C CNN
+F 1 "+5V" H 2665 1173 50  0000 C CNN
+F 2 "" H 2650 1000 50  0001 C CNN
+F 3 "" H 2650 1000 50  0001 C CNN
+	1    2650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0226
+U 1 1 5E4D2E70
+P 2650 1950
+F 0 "#PWR0226" H 2650 1800 50  0001 C CNN
+F 1 "+5V" H 2665 2123 50  0000 C CNN
+F 2 "" H 2650 1950 50  0001 C CNN
+F 3 "" H 2650 1950 50  0001 C CNN
+	1    2650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0233
+U 1 1 5E4D335A
+P 2550 3300
+F 0 "#PWR0233" H 2550 3150 50  0001 C CNN
+F 1 "+5V" H 2565 3473 50  0000 C CNN
+F 2 "" H 2550 3300 50  0001 C CNN
+F 3 "" H 2550 3300 50  0001 C CNN
+	1    2550 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0234
+U 1 1 5E4D4EAD
+P 2550 4250
+F 0 "#PWR0234" H 2550 4100 50  0001 C CNN
+F 1 "+5V" H 2565 4423 50  0000 C CNN
+F 2 "" H 2550 4250 50  0001 C CNN
+F 3 "" H 2550 4250 50  0001 C CNN
+	1    2550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0241
+U 1 1 5E4D56CA
+P 2600 5700
+F 0 "#PWR0241" H 2600 5550 50  0001 C CNN
+F 1 "+5V" H 2615 5873 50  0000 C CNN
+F 2 "" H 2600 5700 50  0001 C CNN
+F 3 "" H 2600 5700 50  0001 C CNN
+	1    2600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0242
+U 1 1 5E4D64A0
+P 2600 6650
+F 0 "#PWR0242" H 2600 6500 50  0001 C CNN
+F 1 "+5V" H 2615 6823 50  0000 C CNN
+F 2 "" H 2600 6650 50  0001 C CNN
+F 3 "" H 2600 6650 50  0001 C CNN
+	1    2600 6650
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
