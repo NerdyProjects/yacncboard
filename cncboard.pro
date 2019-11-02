@@ -1,4 +1,4 @@
-update=Do 31 Okt 2019 15:04:23 CET
+update=Sa 02 Nov 2019 16:14:51 CET
 version=1
 last_client=kicad
 [general]
@@ -263,7 +263,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=230V
-Clearance=2.3
+Clearance=2
 TrackWidth=2
 ViaDiameter=0.8
 ViaDrill=0.4

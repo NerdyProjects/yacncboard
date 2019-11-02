@@ -183,8 +183,6 @@ Wire Wire Line
 Wire Wire Line
 	8000 1000 8000 900 
 Wire Wire Line
-	3700 800  3800 800 
-Wire Wire Line
 	6600 800  6600 1000
 Wire Wire Line
 	2900 1300 2000 1300
@@ -220,7 +218,6 @@ Wire Wire Line
 	4500 4800 4600 4800
 Wire Wire Line
 	2800 800  3700 800 
-Connection ~ 3700 800 
 $Comp
 L Device:C_Small C2
 U 1 1 5DBB9C86
@@ -1126,9 +1123,6 @@ Wire Wire Line
 Wire Wire Line
 	5500 1250 5500 1200
 Wire Wire Line
-	3800 800  5200 800 
-Connection ~ 3800 800 
-Wire Wire Line
 	5850 800  5850 1000
 $Comp
 L Connector:Screw_Terminal_01x02 J3
@@ -1219,14 +1213,74 @@ F 3 "" H 1800 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0109
 U 1 1 5E4DB0E3
 P 9550 1000
-F 0 "#PWR?" H 9550 850 50  0001 C CNN
+F 0 "#PWR0109" H 9550 850 50  0001 C CNN
 F 1 "+5V" H 9565 1173 50  0000 C CNN
 F 2 "" H 9550 1000 50  0001 C CNN
 F 3 "" H 9550 1000 50  0001 C CNN
 	1    9550 1000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3800 800  5200 800 
+Wire Wire Line
+	4500 3800 5050 3800
+Wire Wire Line
+	4500 3900 5050 3900
+Wire Wire Line
+	4500 4200 4900 4200
+Wire Wire Line
+	4900 4200 4900 4000
+Wire Wire Line
+	4900 4000 5050 4000
+Wire Wire Line
+	4500 4300 4950 4300
+Wire Wire Line
+	4950 4300 4950 4100
+Wire Wire Line
+	4950 4100 5050 4100
+Wire Wire Line
+	4500 4400 5000 4400
+Wire Wire Line
+	5000 4400 5000 4200
+Wire Wire Line
+	5000 4200 5050 4200
+Wire Wire Line
+	2750 2600 2900 2600
+Wire Wire Line
+	5050 4450 5050 4300
+$Comp
+L Connector_Generic:Conn_01x07 J25
+U 1 1 5E765B50
+P 5250 4000
+F 0 "J25" H 5330 4042 50  0000 L CNN
+F 1 "Conn_01x07" H 5330 3951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 5250 4000 50  0001 C CNN
+F 3 "~" H 5250 4000 50  0001 C CNN
+	1    5250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0250
+U 1 1 5E76756C
+P 5000 3700
+F 0 "#PWR0250" H 5000 3450 50  0001 C CNN
+F 1 "GND" V 5005 3572 50  0000 R CNN
+F 2 "" H 5000 3700 50  0001 C CNN
+F 3 "" H 5000 3700 50  0001 C CNN
+	1    5000 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3700 5050 3700
+Text Label 2750 2600 2    50   ~ 0
+PL6
+Text Label 5050 4450 3    50   ~ 0
+PL6
+Wire Wire Line
+	3700 800  3800 800 
+Connection ~ 3700 800 
+Connection ~ 3800 800 
 $EndSCHEMATC

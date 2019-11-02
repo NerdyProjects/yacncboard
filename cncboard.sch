@@ -567,4 +567,15 @@ F7 "SDI" I L 5550 3650 50
 F8 "SCK" I L 5550 3750 50 
 F9 "CS" I L 5550 3850 50 
 $EndSheet
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 5E85A0C6
+P 1600 7350
+F 0 "#LOGO1" H 1600 7625 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 1600 7125 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo_19x20mm_SilkScreen" H 1600 7350 50  0001 C CNN
+F 3 "~" H 1600 7350 50  0001 C CNN
+	1    1600 7350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
