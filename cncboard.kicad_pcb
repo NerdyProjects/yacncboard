@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 35)
+    (drawings 39)
     (tracks 3375)
     (zones 0)
     (modules 285)
@@ -11,7 +11,7 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
+    (0 F.Cu signal hide)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -2030,7 +2030,7 @@
     (tags "mounting hole 3.2mm no annular m3")
     (path /5E35B05B)
     (attr virtual)
-    (fp_text reference H1 (at 0 -4.2) (layer F.SilkS)
+    (fp_text reference H1 (at 0 -4.2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole (at 0 4.2) (layer F.Fab)
@@ -12616,7 +12616,7 @@
     (descr "CP, Radial series, Radial, pin pitch=5.00mm, , diameter=13mm, Electrolytic Capacitor")
     (tags "CP Radial series Radial pin pitch 5.00mm  diameter 13mm Electrolytic Capacitor")
     (path /5DC01E0E/5DC06309)
-    (fp_text reference C21 (at -0.9626 -7.1634 90) (layer F.SilkS)
+    (fp_text reference C21 (at -3.1626 -5.9634 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 470µ/63V (at 2.5 7.75 90) (layer F.Fab)
@@ -13859,6 +13859,18 @@
     )
   )
 
+  (gr_text "TMC2130 or A4988 compatible drivers" (at 102 57.75) (layer F.SilkS) (tstamp 5DE950E7)
+    (effects (font (size 0.8 0.8) (thickness 0.1)))
+  )
+  (gr_text "open all bridges if stepper driver has no SPI" (at 103.25 58.75) (layer F.SilkS) (tstamp 5DE950BA)
+    (effects (font (size 0.8 0.8) (thickness 0.1)))
+  )
+  (gr_text "(depends on\nstepper driver!)" (at 191.25 43.75) (layer F.SilkS) (tstamp 5DE94FB3)
+    (effects (font (size 0.8 0.8) (thickness 0.1)))
+  )
+  (gr_text 12-50V (at 191 42.25) (layer F.SilkS) (tstamp 5DE94FAC)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text https://github.com/NerdyProjects/yacncboard (at 111.75 73.75) (layer F.SilkS) (tstamp 5DE7EA56)
     (effects (font (size 0.8 0.8) (thickness 0.1)))
   )
