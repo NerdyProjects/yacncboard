@@ -350,8 +350,6 @@ Wire Wire Line
 	9700 2100 9550 2100
 Wire Wire Line
 	9550 2200 9700 2200
-Text Label 2650 800  1    50   ~ 0
-RESET
 Wire Wire Line
 	2650 800  2650 1100
 Connection ~ 2650 1100
@@ -1283,4 +1281,6 @@ Wire Wire Line
 	3700 800  3800 800 
 Connection ~ 3700 800 
 Connection ~ 3800 800 
+Text HLabel 2650 800  1    50   Input ~ 0
+RESET
 $EndSCHEMATC
